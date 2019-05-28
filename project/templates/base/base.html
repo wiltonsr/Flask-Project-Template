@@ -1,0 +1,28 @@
+{% from "base/macros.html" import render_errors with context %}
+
+<!DOCTYPE html>
+<html lang="en-US" {% block html_attribs %}{% endblock html_attribs %}>
+
+<head>
+
+  <title>{% block title %}{% endblock title %} My Project</title>
+
+  {% block head %}
+  {% endblock head %}
+
+  {% block css %}
+  {% endblock css %}
+
+</head>
+
+<body {% block body_attribs %}{% endblock body_attribs %}>
+
+  {% block body %}
+  {% endblock body %}
+
+  {% block js %}
+  {% endblock js %}
+
+</body>
+
+</html>
